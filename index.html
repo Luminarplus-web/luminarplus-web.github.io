@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Luminarplus — La luce che trasforma gli spazi</title>
+<meta name="description" content="Luminarplus progetta e produce luminarie natalizie, strutture luminose e soluzioni personalizzate per Comuni, attività commerciali, eventi, wedding e hospitality.">
+<meta name="theme-color" content="#080808">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--orange:#ff9817;--orange2:#ffb13b;--black:#070707;--black2:#111;--ink:#0e1a2a;--white:#fff;--cream:#f7f7f5;--muted:#69717b;--line:#e8e8e4;--max:1440px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}a{text-decoration:none;color:inherit}img{display:block;max-width:100%}.container{width:min(calc(100% - 64px),var(--max));margin:auto}
+header{position:fixed;z-index:50;left:0;right:0;top:0;background:rgba(5,5,5,.90);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.10)}
+.nav{height:74px;display:flex;align-items:center;gap:28px}.logo{width:205px;height:auto}.navlinks{display:flex;align-items:center;gap:25px;margin-left:auto}.navlinks a{font-size:13px;color:#f4f4f4;white-space:nowrap}.navlinks a:hover{color:var(--orange)}
+.cta{background:var(--orange);color:#0a0a0a;padding:12px 18px;border-radius:999px;font-weight:800;font-size:13px;white-space:nowrap}.cta:hover{background:var(--orange2)}
+.menu{display:none;margin-left:auto;background:transparent;border:1px solid #444;color:#fff;border-radius:999px;width:42px;height:42px}
+.hero{height:calc(100vh - 0px);min-height:690px;position:relative;overflow:hidden;background:#080808}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.56) 43%,rgba(0,0,0,.18) 75%),linear-gradient(0deg,rgba(0,0,0,.72),transparent 42%)}.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-content{position:relative;z-index:2;height:100%;display:flex;align-items:center;padding-top:75px}.hero-copy{max-width:760px;color:#fff}.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:#fff;font-weight:700;margin-bottom:18px}.hero h1{font-family:Manrope;font-size:clamp(58px,7.2vw,112px);line-height:.88;letter-spacing:-.075em;margin:0 0 20px}.hero h1 span{color:var(--orange)}.hero-sub{font-size:20px;line-height:1.45;max-width:620px;color:#eaeaea;margin:0 0 30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:16px;border-radius:999px;padding:15px 21px;font-size:14px;font-weight:800}.btn-main{background:var(--orange);color:#0a0a0a}.btn-outline{border:1px solid rgba(255,255,255,.7);color:#fff;background:rgba(0,0,0,.12)}
+.hero-side{position:absolute;right:5%;bottom:75px;z-index:3;color:#fff;border-left:1px solid rgba(255,255,255,.4);padding-left:20px}.hero-side b{display:block;font-size:13px;letter-spacing:.15em}.hero-side span{display:block;margin-top:10px;font-size:12px;color:#ddd;line-height:1.5}
+.proof{background:#151515;color:#fff}.proof-grid{display:grid;grid-template-columns:repeat(4,1fr)}.proof-item{padding:26px 28px;border-right:1px solid #3a3a3a;display:flex;align-items:center;gap:18px}.proof-item:last-child{border-right:0}.proof-icon{font-size:32px;color:var(--orange)}.proof-item strong{display:block;font-family:Manrope;font-size:29px;line-height:1}.proof-item small{display:block;text-transform:uppercase;letter-spacing:.12em;font-size:10px;color:#c8c8c8;margin-top:5px}
+.white{background:#fff}.section{padding:90px 0}.section-title{display:flex;justify-content:space-between;gap:45px;align-items:end;margin-bottom:38px}.section-title h2{font-family:Manrope;font-size:clamp(38px,5vw,67px);line-height:.95;letter-spacing:-.065em;margin:10px 0 0}.section-title p{max-width:520px;color:#5d6671;margin:0;font-size:15px}
+.categories{display:grid;grid-template-columns:repeat(7,1fr);gap:9px}.cat{border:1px solid #e3e3df;border-radius:8px;overflow:hidden;background:#fff;transition:.25s}.cat:hover{transform:translateY(-5px);box-shadow:0 18px 35px rgba(20,30,40,.12)}.cat-img{height:160px;overflow:hidden}.cat-img img{width:100%;height:100%;object-fit:cover}.cat-body{padding:14px 12px 17px}.cat-body h3{font-size:15px;line-height:1.15;margin:0 0 5px}.cat-body p{font-size:11px;color:#737b84;margin:0}
+.dark{background:#090909;color:#fff;position:relative;overflow:hidden}.dark:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 12% 20%,rgba(255,152,23,.18),transparent 28%),radial-gradient(circle at 80% 80%,rgba(255,152,23,.10),transparent 30%)}.dark .container{position:relative;z-index:2}.dark .section-title p{color:#b5b5b5}
+.clients{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.client-card{min-height:255px;border:1px solid #383838;border-radius:7px;overflow:hidden;position:relative;background:#111}.client-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.52}.client-card:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 25%,rgba(0,0,0,.95) 90%)}.client-content{position:absolute;z-index:2;left:20px;right:20px;bottom:18px}.client-content .ico{font-size:27px;color:var(--orange)}.client-content h3{font-family:Manrope;font-size:22px;margin:7px 0 3px}.client-content p{font-size:12px;color:#ddd;margin:0 0 15px}.mini{display:inline-flex;padding:9px 13px;border:1px solid var(--orange);border-radius:999px;font-size:11px;font-weight:700}
+.projects{display:grid;grid-template-columns:1.35fr .8fr .8fr;grid-auto-rows:255px;gap:12px}.project{position:relative;overflow:hidden;border-radius:5px;background:#111}.project.big{grid-row:span 2}.project img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.project:hover img{transform:scale(1.05)}.project:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(0,0,0,.85))}.project-text{position:absolute;z-index:2;left:20px;bottom:18px;color:#fff}.project-text small{color:var(--orange);font-size:10px;text-transform:uppercase;letter-spacing:.15em}.project-text b{display:block;font-family:Manrope;font-size:19px;margin-top:3px}
+.process{display:grid;grid-template-columns:repeat(6,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.step{padding:27px 18px;border-right:1px solid var(--line)}.step:last-child{border:0}.step b{color:var(--orange);font-size:12px}.step h3{font-size:16px;margin:25px 0 7px}.step p{font-size:12px;color:#69717b;margin:0}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.story-img{height:600px;overflow:hidden;border-radius:5px}.story-img img{width:100%;height:100%;object-fit:cover}.story-copy .kicker{color:var(--orange);font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:800}.story-copy h2{font-family:Manrope;font-size:clamp(43px,5vw,72px);line-height:.94;letter-spacing:-.07em;margin:10px 0 24px}.story-copy p{color:#5c6671;font-size:16px;max-width:560px}.quote{border-left:2px solid var(--orange);padding-left:18px;margin-top:25px;color:#18212b;font-weight:700}
+.catalog{background:#111;color:#fff;border-radius:7px;padding:62px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:40px;position:relative;overflow:hidden}.catalog:after{content:"";position:absolute;right:-80px;top:-140px;width:400px;height:400px;border-radius:50%;border:1px solid rgba(255,152,23,.25);box-shadow:0 0 0 50px rgba(255,152,23,.03),0 0 0 100px rgba(255,152,23,.025)}.catalog>*{position:relative;z-index:2}.catalog h2{font-family:Manrope;font-size:clamp(38px,4.7vw,64px);line-height:.95;letter-spacing:-.06em;margin:10px 0 15px}.catalog p{color:#b7b7b7;max-width:640px}
+.lead{background:var(--orange);color:#080808}.lead-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:75px}.lead h2{font-family:Manrope;font-size:clamp(44px,5vw,78px);line-height:.92;letter-spacing:-.07em;margin:10px 0 18px}.lead p{max-width:470px;color:#4d2f08}.form{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form input,.form select,.form textarea{width:100%;border:1px solid rgba(0,0,0,.24);background:#fff;padding:15px;border-radius:3px;font:inherit;color:#111}.form textarea{grid-column:1/-1;min-height:135px;resize:vertical}.form button{border:1px solid #111;background:#111;color:#fff;cursor:pointer}.form .full{grid-column:1/-1}
+footer{background:#080808;color:#aaa;padding:50px 0 30px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:35px}.footer-brand img{width:190px;margin-bottom:12px}.footer h4{color:#fff;margin:0 0 12px}.footer a{display:block;font-size:13px;margin:7px 0}.footer a:hover{color:var(--orange)}.fine{border-top:1px solid #252525;margin-top:40px;padding-top:20px;font-size:11px;color:#686868}
+.mobile-panel{display:none;position:fixed;z-index:49;top:74px;left:0;right:0;background:#0a0a0a;border-bottom:1px solid #333;padding:22px}.mobile-panel a{display:block;padding:13px 0;color:#fff;border-bottom:1px solid #242424}.mobile-panel.open{display:block}
+@media(max-width:1100px){.navlinks{gap:14px}.navlinks a{font-size:12px}.categories{grid-template-columns:repeat(4,1fr)}.clients{grid-template-columns:repeat(2,1fr)}.proof-item{padding:22px 16px}}
+@media(max-width:800px){.container{width:min(calc(100% - 32px),var(--max))}.navlinks,.nav>.cta{display:none}.menu{display:block}.hero{min-height:720px}.hero-side{display:none}.proof-grid{grid-template-columns:1fr 1fr}.proof-item:nth-child(2){border-right:0}.proof-item:nth-child(-n+2){border-bottom:1px solid #3a3a3a}.categories{grid-template-columns:1fr 1fr}.section-title{display:block}.section-title p{margin-top:20px}.projects{grid-template-columns:1fr 1fr;grid-auto-rows:220px}.project.big{grid-row:span 2}.process{grid-template-columns:1fr 1fr}.step:nth-child(2n){border-right:0}.step{border-bottom:1px solid var(--line)}.story,.lead-grid{grid-template-columns:1fr;gap:35px}.story-img{height:430px}.catalog{grid-template-columns:1fr;padding:45px 28px}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.logo{width:175px}.hero h1{font-size:55px}.hero-sub{font-size:17px}.proof-grid{grid-template-columns:1fr}.proof-item{border-right:0!important;border-bottom:1px solid #3a3a3a}.proof-item:last-child{border-bottom:0}.categories,.clients,.projects,.process{grid-template-columns:1fr}.project.big{grid-row:span 1}.project{height:280px}.form{grid-template-columns:1fr}.form textarea,.form .full{grid-column:1}.footer-grid{grid-template-columns:1fr}.section{padding:72px 0}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a href="#"><img class="logo" src="assets/luminarplus-logo.png" alt="Luminarplus"></a>
+<nav class="navlinks">
+<a href="#home">Home</a><a href="#soluzioni">Cosa realizziamo</a><a href="#realizzazioni">Realizzazioni</a><a href="#clienti">Per chi lavoriamo</a><a href="#processo">Come lavoriamo</a><a href="#azienda">Azienda</a><a href="#catalogo">Catalogo</a><a href="#contatti">Contatti</a>
+</nav>
+<a class="cta" href="#preventivo">Richiedi una proposta&nbsp; →</a>
+<button class="menu" onclick="toggleMenu()" aria-label="Apri menu">☰</button>
+</div>
+</header>
+<div id="mobilePanel" class="mobile-panel">
+<a href="#home" onclick="toggleMenu()">Home</a><a href="#soluzioni" onclick="toggleMenu()">Cosa realizziamo</a><a href="#realizzazioni" onclick="toggleMenu()">Realizzazioni</a><a href="#clienti" onclick="toggleMenu()">Per chi lavoriamo</a><a href="#processo" onclick="toggleMenu()">Come lavoriamo</a><a href="#azienda" onclick="toggleMenu()">Azienda</a><a href="#catalogo" onclick="toggleMenu()">Catalogo</a><a href="#preventivo" onclick="toggleMenu()">Richiedi una proposta</a>
+</div>
+
+<main>
+<section class="hero" id="home">
+<img src="assets/hero.jpg" alt="Luminarie Luminarplus">
+<div class="container hero-content">
+<div class="hero-copy">
+<div class="eyebrow">Trasformiamo gli spazi con la luce</div>
+<h1>LUMINAR<span>PLUS</span></h1>
+<p class="hero-sub"><strong>La luce che trasforma gli spazi.</strong><br>Dal 1960 realizziamo luminarie artistiche e strutture luminose per Comuni, attività commerciali, eventi, wedding e hospitality. Progettiamo, produciamo e cabliamo soluzioni personalizzate.</p>
+<div class="hero-actions"><a class="btn btn-main" href="#realizzazioni">Scopri le realizzazioni&nbsp; →</a><a class="btn btn-outline" href="#preventivo">Richiedi una proposta&nbsp; →</a></div>
+</div></div>
+<div class="hero-side"><b>DAL 1960</b><span>TRADIZIONE<br>INNOVAZIONE<br>EMOZIONE</span></div>
+</section>
+
+<section class="proof"><div class="container proof-grid">
+<div class="proof-item"><div class="proof-icon">♜</div><div><strong>60+</strong><small>anni di esperienza*</small></div></div>
+<div class="proof-item"><div class="proof-icon">♜</div><div><strong>300+</strong><small>Comuni raggiunti*</small></div></div>
+<div class="proof-item"><div class="proof-icon">⚙</div><div><strong>Progettazione</strong><small>e produzione</small></div></div>
+<div class="proof-item"><div class="proof-icon">☆</div><div><strong>Soluzioni</strong><small>personalizzate</small></div></div>
+</div></section>
+
+<section class="section white" id="soluzioni"><div class="container">
+<div class="section-title"><div><div class="kicker">Cosa realizziamo</div><h2>Diamo forma alle tue idee,<br>con la luce.</h2></div><p>Dalle luminarie natalizie alle installazioni per eventi, realizziamo strutture luminose su misura, combinando produzione artigianale, tecnologia LED e design creativo.</p></div>
+<div class="categories">
+<a class="cat" href="#preventivo"><div class="cat-img"><img src="assets/project-street.jpg" alt=""></div><div class="cat-body"><h3>Luminarie Natalizie</h3><p>Tradizione che illumina</p></div></a>
+<a class="cat" href="#preventivo"><div class="cat-img"><img src="assets/project-arch.jpg" alt=""></div><div class="cat-body"><h3>Luminarie per Eventi</h3><p>Soluzioni per ogni occasione</p></div></a>
+<a class="cat" href="#preventivo"><div class="cat-img"><img src="assets/project-regalo.jpg" alt=""></div><div class="cat-body"><h3>Wedding & Location</h3><p>Scenografie d'atmosfera</p></div></a>
+<a class="cat" href="#preventivo"><div class="cat-img"><img src="assets/project-mongolfiera.jpg" alt=""></div><div class="cat-body"><h3>Stabilimenti & Hospitality</h3><p>Luce per l'estate</p></div></a>
+<a class="cat" href="#preventivo"><div class="cat-img"><img src="assets/project-snowman.jpg" alt=""></div><div class="cat-body"><h3>Attività Commerciali</h3><p>Rendi unico il tuo spazio</p></div></a>
+<a class="cat" href="#preventivo"><div class="cat-img"><img src="assets/project-comune.jpg" alt=""></div><div class="cat-body"><h3>Comuni e Spazi Pubblici</h3><p>Valorizziamo il territorio</p></div></a>
+<a class="cat" href="#preventivo"><div class="cat-img"><img src="assets/project-animals.jpg" alt=""></div><div class="cat-body"><h3>Progetti Personalizzati</h3><p>Idee senza limiti</p></div></a>
+</div></div></section>
+
+<section class="section dark" id="clienti"><div class="container">
+<div class="section-title"><div><div class="kicker">Per chi lavoriamo</div><h2>Soluzioni luminose<br>per ogni esigenza.</h2></div><p>Ogni progetto nasce dall'ascolto delle esigenze del cliente, con soluzioni dedicate per valorizzare spazi, attività e territori.</p></div>
+<div class="clients">
+<article class="client-card"><img src="assets/project-street.jpg" alt=""><div class="client-content"><div class="ico">▥</div><h3>Comuni</h3><p>Illuminiamo piazze, vie e centri storici, valorizzando il territorio.</p><a class="mini" href="#preventivo">Scopri di più →</a></div></article>
+<article class="client-card"><img src="assets/project-regalo.jpg" alt=""><div class="client-content"><div class="ico">▣</div><h3>Attività commerciali</h3><p>Rendi il tuo spazio riconoscibile e attraente.</p><a class="mini" href="#preventivo">Scopri di più →</a></div></article>
+<article class="client-card"><img src="assets/project-arch.jpg" alt=""><div class="client-content"><div class="ico">♢</div><h3>Wedding & Location</h3><p>Atmosfere uniche per il tuo giorno speciale.</p><a class="mini" href="#preventivo">Scopri di più →</a></div></article>
+<article class="client-card"><img src="assets/project-mongolfiera.jpg" alt=""><div class="client-content"><div class="ico">⌁</div><h3>Ristoranti, Beach & Hospitality</h3><p>Luce che crea emozioni e lascia il segno.</p><a class="mini" href="#preventivo">Scopri di più →</a></div></article>
+</div></div></section>
+
+<section class="section white" id="realizzazioni"><div class="container">
+<div class="section-title"><div><div class="kicker">Realizzazioni</div><h2>Il lavoro vero<br>prima di tutto.</h2></div><p>Le fotografie reali sono la nostra prova più concreta: mostrare cosa possiamo creare, non solo raccontarlo.</p></div>
+<div class="projects">
+<div class="project big"><img src="assets/project-arch.jpg" alt=""><div class="project-text"><small>Strutture luminose</small><b>Archi e attraversamenti</b></div></div>
+<div class="project"><img src="assets/project-animals.jpg" alt=""><div class="project-text"><small>3D</small><b>Soggetti luminosi</b></div></div>
+<div class="project"><img src="assets/project-balena.jpg" alt=""><div class="project-text"><small>Su misura</small><b>Forme personalizzate</b></div></div>
+<div class="project"><img src="assets/project-pinguini.jpg" alt=""><div class="project-text"><small>Natale</small><b>Composizioni tematiche</b></div></div>
+<div class="project"><img src="assets/project-mongolfiera.jpg" alt=""><div class="project-text"><small>Personalizzato</small><b>Elementi iconici</b></div></div>
+<div class="project"><img src="assets/project-ghepardo.jpg" alt=""><div class="project-text"><small>3D</small><b>Installazioni scenografiche</b></div></div>
+<div class="project"><img src="assets/project-regalo.jpg" alt=""><div class="project-text"><small>Natale</small><b>Scenografie luminose</b></div></div>
+</div></div></section>
+
+<section class="section white" id="processo"><div class="container">
+<div class="section-title"><div><div class="kicker">Come lavoriamo</div><h2>Dall'idea<br>alla struttura.</h2></div><p>Un percorso chiaro per trasformare un'esigenza in una proposta concreta, dalla progettazione alla preparazione del prodotto.</p></div>
+<div class="process">
+<div class="step"><b>01</b><h3>Ci racconti il progetto</h3><p>Contesto, periodo, spazio e obiettivi.</p></div><div class="step"><b>02</b><h3>Studiamo la soluzione</h3><p>Soggetti, dimensioni e composizione.</p></div><div class="step"><b>03</b><h3>Progettiamo</h3><p>Diamo forma alla proposta.</p></div><div class="step"><b>04</b><h3>Produciamo</h3><p>Realizziamo strutture e lavorazioni.</p></div><div class="step"><b>05</b><h3>Cabliamo</h3><p>Prepariamo illuminazione e componenti.</p></div><div class="step"><b>06</b><h3>Consegniamo</h3><p>Il progetto è pronto per il cliente.</p></div>
+</div></div></section>
+
+<section class="section white" id="azienda"><div class="container story"><div class="story-img"><img src="assets/project-animals.jpg" alt="Struttura luminosa"></div><div class="story-copy"><div class="kicker">Azienda</div><h2>Tre generazioni.<br>Una stessa idea.</h2><p>Da oltre sessant'anni Luminarplus lavora nel mondo delle luminarie, unendo esperienza artigianale, progettazione e nuove tecnologie. Dalle prime realizzazioni alle strutture luminose contemporanee, l'obiettivo è rimasto lo stesso: dare forma alla luce.</p><p>La storia dell'azienda, la produzione e il lavoro quotidiano diventano valore in ogni progetto.</p><div class="quote">La luce non è solo decorazione: è un modo per trasformare un luogo e farlo ricordare.</div></div></div></section>
+
+<section class="section white" id="catalogo"><div class="container"><div class="catalog"><div><div class="kicker">Catalogo 2026/27</div><h2>Guarda le soluzioni.<br>Poi costruiamone una tua.</h2><p>Il catalogo completo diventa il punto di partenza per scegliere soggetti, composizioni e ispirazioni.</p><div class="notice">COLLEGA QUI IL PDF DEL CATALOGO 2026/27 QUANDO DISPONIBILE.</div></div><a class="btn btn-main" href="#preventivo">Parla con noi →</a></div></div></section>
+
+<section class="section lead" id="preventivo"><div class="container lead-grid"><div><div class="kicker">Richiedi una proposta</div><h2>Raccontaci<br>il progetto.</h2><p>Un modulo pensato per raccogliere informazioni utili già dal primo contatto: tipologia, località, periodo e idea del cliente.</p>
+<p><strong>Contatto diretto:</strong> <a href="tel:+393471720321">347 172 0321</a> · <a href="tel:+393806833505">380 683 3505</a> · <a href="tel:+393425685902">342 568 5902</a></p></div>
+<form class="form" onsubmit="return sendForm(event)">
+<input required name="name" placeholder="Nome e cognome"><input required name="company" placeholder="Azienda / Comune">
+<select required name="type"><option value="">Tipo di progetto</option><option>Comune</option><option>Attività commerciale</option><option>Ristorante / Hospitality</option><option>Wedding / Location</option><option>Stabilimento</option><option>Evento</option><option>Altro</option></select>
+<input name="location" placeholder="Località del progetto"><input name="period" placeholder="Periodo / stagione"><input name="phone" placeholder="Telefono">
+<textarea name="message" placeholder="Raccontaci cosa vuoi realizzare, dimensioni indicative, stile o idee che hai già in mente."></textarea>
+<button class="btn form-submit full" type="submit">Richiedi la tua proposta&nbsp; →</button><div id="formmsg" class="full"></div>
+</form></div></section>
+</main>
+
+<footer id="contatti"><div class="container">
+<div class="footer-grid">
+<div class="footer-brand"><img src="assets/luminarplus-logo.png" alt="Luminarplus"><div>La luce che trasforma gli spazi.</div></div>
+<div><h4>Navigazione</h4><a href="#soluzioni">Cosa realizziamo</a><a href="#realizzazioni">Realizzazioni</a><a href="#clienti">Per chi lavoriamo</a><a href="#azienda">Azienda</a></div>
+<div><h4>Progetti</h4><a href="#preventivo">Luminarie natalizie</a><a href="#preventivo">Strutture 2D / 3D</a><a href="#preventivo">Eventi & Wedding</a><a href="#preventivo">Progetti personalizzati</a></div>
+<div><h4>Contatti</h4>
+<a href="#preventivo">Richiedi una proposta</a>
+<a href="tel:+393471720321">347 172 0321</a>
+<a href="tel:+393806833505">380 683 3505</a>
+<a href="tel:+393425685902">342 568 5902</a>
+<a href="https://wa.me/message/3ZCPBL4FJS2FD1" target="_blank" rel="noopener">WhatsApp</a>
+<a href="https://www.instagram.com/luminarplus/" target="_blank" rel="noopener">Instagram</a>
+</div>
+</div>
+<div class="fine">* I claim “60+ anni” e “300+ Comuni” devono essere verificati e documentati prima della pubblicazione definitiva. Inserire inoltre i contatti ufficiali e il PDF catalogo 2026/27.</div>
+</div></footer>
+
+<script>
+function toggleMenu(){document.getElementById('mobilePanel').classList.toggle('open')}
+function sendForm(e){
+ e.preventDefault();
+ const data = new FormData(e.target);
+ const subject = encodeURIComponent("Richiesta proposta Luminarplus — "+(data.get("company")||""));
+ const body = encodeURIComponent(
+ "Nome: "+data.get("name")+"\n"+
+ "Azienda/Comune: "+data.get("company")+"\n"+
+ "Tipo progetto: "+data.get("type")+"\n"+
+ "Località: "+data.get("location")+"\n"+
+ "Periodo: "+data.get("period")+"\n"+
+ "Telefono: "+data.get("phone")+"\n\n"+
+ "Progetto:\n"+data.get("message")
+ );
+ // Replace the email below with the official Luminarplus address before going live.
+ window.location.href="https://wa.me/message/3ZCPBL4FJS2FD1?text="+encodeURIComponent("Ciao Luminarplus, vorrei richiedere una proposta.\n\n"+decodeURIComponent(body));
+ document.getElementById("formmsg").textContent="Per completare la richiesta puoi inviarci il messaggio direttamente su WhatsApp.";
+ return false;
+}
+</script>
+</body></html>
